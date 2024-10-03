@@ -9,13 +9,12 @@ public class SandwichShop {
         Scanner input = new Scanner(System.in);
 
         //prompt use for sandwich size
-        System.out.println("Select a sandwich size (1 or 2):");
-        System.out.println("1: Regular (5.45)");
-        System.out.println("2: Large (8.95)");
+        System.out.println("\nWelcome to the Sandwich Shop! \n Please select a sandwich size (1 or 2):");
+        System.out.println("\n1: Regular (5.45) \n2: Large (8.95)");
         int sandwichSize = input.nextInt();
 
         //prompt user for are
-        System.out.println("What is your age? ");
+        System.out.println("Great! What is your age? ");
         int age = input.nextInt();
         double price = 0.0;
         double discount = 0.0;
@@ -34,11 +33,11 @@ public class SandwichShop {
 
         if(age <= 17) {
             discount = 0.10; // 10% discount for students
-            System.out.println("You qualify for a 10% Student discount!");
+            System.out.println("Alright! You qualify for a 10% Student discount!");
         }
         else if (age >= 65) {
             discount = 0.20; // 20% discount for senior
-            System.out.println("You qualify for a 20% Senior discount!");
+            System.out.println("Alright! You qualify for a 20% Senior discount!");
 
         }
         else {
@@ -49,8 +48,8 @@ public class SandwichShop {
         double applyDiscount = price * discount;
         double total = price - applyDiscount;
 
-        System.out.printf("Your total is: $%.2f", total);
-        System.out.print("\nEnjoy!");
+        System.out.printf("\nYour total is: $%.2f", total);
+        System.out.print("\n\tEnjoy!");
 
 
 
