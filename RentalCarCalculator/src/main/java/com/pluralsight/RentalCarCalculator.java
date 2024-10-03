@@ -1,3 +1,7 @@
+//In this exercise you will create a CLI application for a rental car company.
+//prompt the user to answer questions about their selected options and then
+//calculate the cost of the rental.
+
 package com.pluralsight;
 
 import java.util.Scanner;
