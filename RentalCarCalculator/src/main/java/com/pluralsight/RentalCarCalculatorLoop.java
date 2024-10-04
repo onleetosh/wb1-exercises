@@ -63,7 +63,7 @@ public class RentalCarCalculatorLoop {
 
     public static boolean PromptForYesOrNo(String prompt) {
 
-        // a loop that will keep prompting user until for correct into
+        // a loop that will keep prompting user until user input matches set rules
         while (true) {
             System.out.print(prompt + " (Y for yes, N for No ) ");
             String answer = s.nextLine();
