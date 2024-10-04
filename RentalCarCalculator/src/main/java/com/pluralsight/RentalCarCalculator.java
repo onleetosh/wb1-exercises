@@ -12,7 +12,7 @@ public class RentalCarCalculator {
 
     public static void main(String[] args) {
 
-        System.out.println("\nWelcome to the Car Rental ! \nPlease answer the following information.");
+        System.out.println("\nWelcome to the Car Rental ! \nPlease answer the following questions.");
         //declared variables with user prompt response
         String pickUpDate = PromptUser("\nPick up date (ex. 10-11-2024): ");
         short numberOfDays = PromptForDays("How many days are you renting? ");
@@ -41,10 +41,11 @@ public class RentalCarCalculator {
         double totalCost = baseCarRental + optionTotalFee + underAgeExtraFree;
 
         //display results
-        System.out.println("\nThank You! \n\nAfter reviewing the information, here is a summary of the bill: ");
-        System.out.printf("\tBasic car rental fee: %.2f \n", baseCarRental);
-        System.out.printf("\tOptions fee: %.2f\n", optionTotalFee);
-        System.out.printf("\tUnder driver surcharge fee: %.2f \n", underAgeExtraFree);
+        System.out.println("\nThank You! \n\nAfter reviewing the information, here is a summary of the bill:");
+        System.out.printf("\t_______________________\n");
+        System.out.printf("\tBasic car rental fee:   %.2f \n", baseCarRental);
+        System.out.printf("\tOptional fee:            %.2f\n", optionTotalFee);
+        System.out.printf("\tUnderage surcharge fee: %.2f \n", underAgeExtraFree);
         System.out.printf("\t_______________________");
         System.out.printf("\n\tTotal cost: \t%.2f", totalCost);
         System.out.println("\n\nENJOY YOUR RENTAL, DRIVE SAFE !!");
